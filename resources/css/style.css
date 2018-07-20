@@ -66,6 +66,10 @@ a {
   margin-right: 2rem;
   color: white;
 }
+
+.add {
+  display: none;
+}
 /*Header Strapline*/
 
 .strapline {
@@ -76,7 +80,6 @@ a {
   position: relative;
   top: 10rem;
   right: -2rem;
-  margin: 0;
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.2;
@@ -156,4 +159,105 @@ footer {
 footer img {
   height: 1.5rem;
   margin-right: 1rem;
+}
+
+/*Design For Tablet*/
+
+@media only screen and (max-width: 1024px) {
+  /*Header Logo Nav Background*/
+  header {
+    height: 22rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .navigation {
+    position: static;
+  }
+  /*Strapline*/
+  .strapline h2 {
+    position: relative;
+    top: 5rem;
+    right: 2rem;
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+}
+
+/*Design For Phone*/
+
+@media only screen and (max-width: 640px) {
+  header {
+    height: 17rem;
+  }
+  .nodisplay {
+    display: none;
+  }
+  .add {
+    display: block;
+  }
+  .strapline {
+    float: none;
+  }
+  .strapline h2 {
+    position: relative;
+    top: 9rem;
+    right: 0rem;
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+  .icons.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem 0;
+  }
+  .box {
+    line-height: 1.2;
+    height: auto;
+  }
+  .icon {
+    height: auto;
+  }
+  .icon img {
+    padding: 1.54rem 0;
+  }
+  span {
+    font-size: 0.77rem;
+  }
+  .pa.container {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 4rem;
+  }
+  .information {
+    text-align: left;
+    width: 100%;
+    margin: 0 0 4rem 0;
+  }
+  .pa h4 {
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+  }
+  .information span {
+    display: block;
+    line-height: 1.4;
+    padding: 0 1rem;
+  }
+  .copyright {
+    justify-content: center;
+    padding: 4rem 0;
+  }
+  footer img {
+    height: 1.5rem;
+    margin-right: 0;
+  }
+
+
+
 }
