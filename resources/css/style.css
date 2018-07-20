@@ -19,14 +19,21 @@ html {
   margin: 0 auto;
 }
 
-/*Header*/
+/*Header Logo Nav Background*/
 
-header .container {
+header {
+  height: 30rem;
+  background: url("../images/glasses-bg.png") center no-repeat;
+  background-size: cover;
+}
+
+.navigation {
+  position: relative;
+  top: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: cadetblue;
-  margin-top: 1rem;
   padding: 1rem 0;
   color: white;
 }
@@ -37,7 +44,7 @@ header img {
   margin-left: 2rem;
 }
 
-header .container .logo {
+header .navigation .logo {
   display: flex;
   align-items: center;
 }
@@ -50,4 +57,22 @@ a {
   text-decoration: none;
   margin-right: 2rem;
   color: white;
+}
+/*Header Strapline*/
+
+.strapline {
+  float: right;
+}
+
+.strapline h2 {
+  position: relative;
+  top: 10rem;
+  right: -2rem;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: black;
+  background-color: white;
+  padding: 1.5rem 5rem;
 }
